@@ -1,6 +1,9 @@
 import math
 
-radius = float(input("Enter the radius of the circle: "))
-area = math.pi*math.pow(radius,2)
-area_2 = f"{area:.2f}"
-print("The area of the circle with radius",radius,"is", area_2)
+angle = float(input("Enter the angle in degrees: "))
+radian = math.radians(angle)
+sin = math.sin(radian)
+cos = math.cos(radian)
+maximum = max(sin, cos)
+result = round(maximum, 4)
+print("The result is:", result)
